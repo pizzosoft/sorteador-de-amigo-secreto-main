@@ -10,13 +10,13 @@ jest.mock('react-router-dom', () => {
         useNavigate: () => mockNavegacao
     }
 })
-describe('A página de configuração', () => {
+
+describe('a pagina de configuracao', () => {
     test('deve ser renderizada corretamente', () => {
-        const { container } = render(
-            <RecoilRoot>
-                <Configuracao />
-            </RecoilRoot>
-        )
+        const { container } = render(<RecoilRoot>
+            <Configuracao />
+        </RecoilRoot>)
+
         expect(container).toMatchSnapshot()
     })
 })
