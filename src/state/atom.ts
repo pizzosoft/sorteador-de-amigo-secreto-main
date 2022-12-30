@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 
-export const listaParticipantesState = atom<String[]>({
+export const listaParticipantesState = atom<string[]>({
     key: 'listaParticipantesState',
     default: []
 })
